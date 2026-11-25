@@ -1,0 +1,35 @@
+# Dependencias (se reinstalan con npm install / pip install -r requirements.txt)
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+# Builds
+dist/
+build/
+.next/
+out/
+# Secretos — NUNCA a GitHub
+.env
+.env.*
+!.env.example
+*.key
+credentials*.json
+*.pem
+*.p12
+*.pfx
+# Firma Android (keystore + contraseñas) y rutas locales del SDK
+*.jks
+*.keystore
+keystore.properties
+local.properties
+# Cloudflare / Wrangler (secretos locales)
+.dev.vars
+.wrangler/
+# Sistema
+desktop.ini
+Thumbs.db
+.DS_Store
+# Datos pesados: van en Drive\APPS\DATOS\<proyecto>, no en git
+*.zip
+*.csv.gz
